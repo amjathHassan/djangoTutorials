@@ -1,0 +1,18 @@
+.myform{
+    color: aquamarine;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(32, 99, 99);
+    text-align: center;
+   
+}
+
+.newform{
+
+    border: 5px solid rgb(168, 219, 113);
+
+}
+newform, .fname, .lname, .email{
+
+    border: 5px solid rgb(168, 219, 113);
+
+}

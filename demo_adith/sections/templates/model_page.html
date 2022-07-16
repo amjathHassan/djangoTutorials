@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Datas from DB</h1><hr>
+{% for data in patients %}
+    <p>{{data.first_name}}</p>
+{% endfor %}
+
+<hr><br>
+{{patients}}
+
+{% endblock content %}
+
+

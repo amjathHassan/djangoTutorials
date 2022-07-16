@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Movies 4 You </h1><br><hr>
+
+<h3>Charlie (ചാർലി)</h3>
+
+<p> 2015 ‧ Drama/Romance ‧ 2h 10m</p><hr>
+{% load static %}
+<img src="{% static 'actors/charlie.jpg' %}" alt="charlie_movie_poster" width="400px">
+<hr>
+<a href="{% url 'actors:actors_list_page' %}"><h3>Actors list</h3></a>
+<a href="{% url 'singers:singers_list_page' %}"><h3>Singers list</h3></a>
+
+<h3>About</h3>
+<p> 8/10 · IMDb</p>
+<p>95% liked this film</p>
+<p>Google users</p>
+<p>Tessa runs away from home to avoid getting married and rents a room. She finds a sketchbook of the previous occupant, which reveals an incomplete story, and decides to find the artist.
+    Release date: 24 December 2015 (India)</p><br>
+<p><strong>Director</strong>: Martin Prakkat</p>
+<p><strong>Box office</strong>: ₹420 million</p>
+<p><strong>Story by</strong>: Unni R</p>
+<p><strong>Production company</strong>: Finding Cinema   </p>
+
+{% endblock content %}

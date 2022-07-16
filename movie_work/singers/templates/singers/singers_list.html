@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Singers List</h1><br><hr>
+
+<ol>
+        
+    <li><a href="{% url 'singers:shreyaghoshal'  %}"><h3>Shreya Ghoshal</h3></a></li>
+    <li><a href="{% url 'singers:vijayyesudas'  %}"><h3>Vijay Yesudas</h3></a></li>
+    <li><a href="{% url 'singers:rajalakshmiabhiram'  %}"><h3>Rajalakshmi Abhiram</h3></a></li>
+</ol>
+
+<br><hr>
+
+
+<a href="{% url 'singers:actors_path' %}"><h3>Go to actors page</h3></a>
+{% endblock content %}

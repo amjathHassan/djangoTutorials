@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h2>WELCOME</h2> 
+   
+   <a href="{% url 'form_page:form_page' %}"><h2>Sign up form</h2></a>
+   <a href="{% url 'form_page:model_form' %}"><h2>ModelForm</h2></a>
+{% endblock content %}

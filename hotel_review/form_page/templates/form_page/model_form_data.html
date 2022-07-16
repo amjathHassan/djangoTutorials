@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>ModelForm Data Form DB</h2> <hr>
+    {% for items in data %}
+    <p>{{items.first_name}} {{items.last_name}} {{items.age}}</p>
+    {% endfor %}
+
+    {{data}}
+{% endblock content %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<h1>Grab your brand today ... Offer closes soon...!</h1>
+
+<img src="{% static 'watches/watch_pic.jpg' %}" alt="watch_picture" width="500px">
+<hr>
+
+<hr>
+<h3>As {{firstname}} is so brilliant he is considered as prodigy at the age of {{age}} </h3>
+<h3>As {{firstname | length}} is so brilliant he is considered as prodigy at the age of {{age}} </h3>
+<h3>As {{firstname.0}} is so brilliant he is considered as prodigy at the age of {{age}} </h3>
+<h3>As {{firstname | upper}} is so brilliant he is considered as prodigy at the age of {{age}} </h3>
+<h4>html response</h4>
+<h1>{{list_items}}</h1>
+<hr>
+
+<!-- creating hyper link using django (for going to another html page)-->
+<a href="{% url 'watches:offers_page' %}"><h2>Check Offers</h2></a>
+
+<hr>
+
+<!-- implementing python conditional and loop statement on html tags  -->
+
+<!-- using for loop -->
+
+{% for i in list_items %}
+    <h3><li>{{i}}</li></h3>
+{% endfor %}
+
+<!-- using if conditions -->
+<hr>
+{% for i in list_items %}
+    {% if i == 2 %}
+        <h3>{{i}} : two</h3>
+
+    {% elif i == 3 %}
+        <h3>three</h3>
+
+    {% else %}
+        <h3>{{i}}</h3>
+    {% endif %}
+
+    
+
+{% endfor %}
+
+{% endblock content %}
+
+
